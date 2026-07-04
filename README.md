@@ -8,12 +8,12 @@ An [Agent Skill](https://agentskills.io/) that teaches AI agents how to evaluate
 
 ## What it does
 
-When an agent is about to install or load an unknown skill, `skill-sentinel` activates and walks through a structured five-step review:
+When an agent is about to install or load an unknown skill, `skill-sentinel` activates and walks through a structured four-step review:
 
 1. **Source check** — Who made it? How old is the repo? Is it registered on ProductClank?
-2. **Code review** — Red flags: credential access, network exfiltration, obfuscated code, injection patterns
-3. **Permission scope** — Is the access footprint minimal for what the skill claims to do?
-4. **Risk classification** — 🟢 LOW / 🟡 MEDIUM / 🔴 HIGH / ⛔ EXTREME, with a final verdict
+2. **Security check** — Has it been graded by an adversarial scanner?
+3. **Code review** — Red flags: credential access, network exfiltration, obfuscated code, injection patterns
+4. **Permission scope and risk classification** — 🟢 LOW / 🟡 MEDIUM / 🔴 HIGH / ⛔ EXTREME, with a final verdict
 
 It then produces a standardised vetting report that an agent or human can act on.
 
@@ -24,13 +24,13 @@ It then produces a standardised vetting report that an agent or human can act on
 Load the skill into your agent by pointing it at `SKILL.md`:
 
 ```
-https://github.com/YOUR_GITHUB/YOUR_REPO/blob/main/skill-sentinel/SKILL.md
+https://github.com/AyushVerma7861/skill-sentinel/blob/main/SKILL.md
 ```
 
 Or fetch raw:
 
 ```bash
-curl -s https://raw.githubusercontent.com/YOUR_GITHUB/YOUR_REPO/main/skill-sentinel/SKILL.md
+curl -s https://raw.githubusercontent.com/AyushVerma7861/skill-sentinel/main/SKILL.md
 ```
 
 ---
@@ -38,7 +38,7 @@ curl -s https://raw.githubusercontent.com/YOUR_GITHUB/YOUR_REPO/main/skill-senti
 ## Quick vet a skill manually
 
 ```bash
-# Clone and run the helper script
+# Run the helper script
 chmod +x scripts/quick-vet.sh
 ./scripts/quick-vet.sh <owner> <repo> [skill-subdir]
 
@@ -69,12 +69,8 @@ skill-sentinel/
 
 This skill is registered with the [ProductClank Skill Registry](https://www.productclank.com/superfluid/skills) and follows the [Agent Skills](https://agentskills.io/) standard (v1, Anthropic).
 
-Security checks in `references/RED_FLAGS.md` align with the four Polygraph adversarial check categories (C-01 through C-04) used by [polygraph.so](https://polygraph.so).
-
 **Useful links:**
 - [ProductClank Agents](https://www.productclank.com/agents)
-- [Skill Registry — Season 6](https://www.productclank.com/superfluid/skills)
-- [Skill-Leads programme](https://www.productclank.com/skill-leads)
 - [Official ProductClank agent skills](https://github.com/covariance-network/productclank-agent-skill)
 
 ---
