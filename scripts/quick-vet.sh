@@ -72,4 +72,4 @@ echo "[... truncated — full file at github.com/covariance-network/productclank
 
 echo ""
 echo "=== QUICK VET COMPLETE ==="
-echo "Next: Check polygraph.so for a security grade, then complete Steps 3-5 manually."
+echo "Next: run a security grade check on the skill, then complete Steps 3-4 manually."

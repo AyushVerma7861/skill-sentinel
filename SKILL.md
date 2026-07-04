@@ -23,7 +23,7 @@ Never install a skill without vetting it first. This skill walks you through a s
 
 ## Gotchas
 
-- A security grade reflects **static scanning only** — it is not behavioural proof. Always complete Steps 3–5 even after an A grade.
+- A security grade reflects **static scanning only** — it is not behavioural proof. Always complete Steps 3–4 even after an A grade.
 - Repo age is one of the strongest legitimacy signals. Repos under 1 month old get maximum scrutiny regardless of author or grade.
 - A skill that looks legitimate in its README may do something completely different in its scripts. Always read every file.
 - Official ProductClank skills live under `github.com/covariance-network` only. Any skill claiming official status from another org is Tier 4 (unknown).

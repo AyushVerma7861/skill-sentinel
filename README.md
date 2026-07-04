@@ -71,6 +71,8 @@ This skill is registered with the [ProductClank Skill Registry](https://www.prod
 
 **Useful links:**
 - [ProductClank Agents](https://www.productclank.com/agents)
+- [Skill Registry — Season 6](https://www.productclank.com/superfluid/skills)
+- [Skill-Leads programme](https://www.productclank.com/skill-leads)
 - [Official ProductClank agent skills](https://github.com/covariance-network/productclank-agent-skill)
 
 ---

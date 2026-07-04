@@ -13,7 +13,7 @@ Point your agent at `SKILL.md`. In most agent environments:
 Or fetch it raw and pass it to your agent's skill loader:
 
 ```bash
-curl -s https://raw.githubusercontent.com/YOUR_GITHUB/YOUR_REPO/main/skill-sentinel/SKILL.md
+curl -s https://raw.githubusercontent.com/AyushVerma7861/skill-sentinel/main/SKILL.md
 ```
 
 ## 2. Trigger it
@@ -26,7 +26,7 @@ Or just paste a SKILL.md and ask:
 
 > "Is this skill safe to install in my ProductClank agent?"
 
-The skill will activate and begin the five-step protocol automatically.
+The skill will activate and begin the four-step protocol automatically.
 
 ## 3. Run a quick vet from the terminal
 
@@ -46,13 +46,15 @@ Output includes: repo age, star/fork count, file list, SKILL.md content, and rec
 The agent produces a structured vetting report:
 
 ```
-SKILL VETTING REPORT
+SKILL SENTINEL REPORT
 ═══════════════════════════════════════════════
 Skill:         example-skill
 Source:        github.com/someone/example-skill
 Author:        someone
 Version:       1.0.0
 Repo created:  2025-07-01
+───────────────────────────────────────────────
+SECURITY GRADE:  A
 ───────────────────────────────────────────────
 RED FLAGS:     None found
 
@@ -76,5 +78,5 @@ No red flags found in code review. Permission scope is minimal.
 
 If you need to go deeper:
 
-- `references/RED_FLAGS.md` — full security checklist with examples for each Polygraph check category
+- `references/RED_FLAGS.md` — full security checklist with examples
 - `references/TRUST_HIERARCHY.md` — ProductClank trust model, repo age guidance, and official resource list
